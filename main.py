@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 # gravando o excel em uma variaveldf
 df = pd.read_excel("planilhao.xlsx", sheet_name="Sheet1")
 # titulo do Dashboar
-st.header("Meu Dashbord")
+st.header("Meu Dashbord versao 2.0 ")
 menu = st.tabs(["Tabela", "Barra", "Pizza"])
 with menu[0]:
         st.dataframe(df)# expondo o df no dashboard
@@ -35,6 +35,9 @@ with menu[2]:
                 wedgeprops={'linewidth': 3, 'edgecolor': 'white'})
         plt.show()
         st.pyplot(fig)
+
+
+
 
 
 # import pandas as pd
